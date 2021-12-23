@@ -15,8 +15,10 @@
     --dark-primary-color: #fff;
     --dark-secondary-color: ;
     --dark-bg-color: ;
-    --dark-surface-color: ;
-    ;
+    --dark-surface-color: #121212;
+
+
+    /* The higher a surface's elevation (raising it closer to an implied light source), the lighter that surface becomes. That lightness is expressed through the application of a semi-transparent overlay using the On Surface color. */
 }
 
 
@@ -24,39 +26,56 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 .controller-container {
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid black;
 }
 
-.font-size, .color-theme {
+.font-size-container, .color-theme {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: .5rem;
 }
 
-.font-size.small {
-    font-size: 1rem;
+
+.font-size-container button {
+    width: 2rem;
+    height: 2rem;
 }
 
-.font-size.medium {
+.font-size-container .small {
+    font-size: .9rem;
+}
+
+.font-size-container .medium {
     font-size: 1.2rem;
 }
 
-.font-size.large {
-    font-size: 1.4rem;
+.font-size-container .large {
+    font-size: 1.5rem;
+}
+
+.color-theme {
+    gap: .3rem;
 }
 
 .color-theme-selector {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
 }
 
 .color-theme-selector.white {
     background-color: white;
+    border: 1px solid gray;
 }
 
 .color-theme-selector.grey {
@@ -65,4 +84,13 @@
 
 .color-theme-selector.dark {
     background-color: black;
+}
+
+.article-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+article h2, p {
+    margin-bottom: 1rem;
 }
