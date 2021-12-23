@@ -1,0 +1,68 @@
+:root {
+    /* light theme*/
+    --light-primary-color: #fff;
+    --light-secondary-color: ;
+    --light-bg-color: ;
+    --light-surface-color: ;
+    ;
+    /* medium theme*/
+    --medium-primary-color: #fff;
+    --medium-secondary-color: ;
+    --medium-bg-color: ;
+    --medium-surface-color: ;
+    ;
+    /* dark theme*/
+    --dark-primary-color: #fff;
+    --dark-secondary-color: ;
+    --dark-bg-color: ;
+    --dark-surface-color: ;
+    ;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.controller-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.font-size, .color-theme {
+    display: flex;
+    align-items: center;
+}
+
+.font-size.small {
+    font-size: 1rem;
+}
+
+.font-size.medium {
+    font-size: 1.2rem;
+}
+
+.font-size.large {
+    font-size: 1.4rem;
+}
+
+.color-theme-selector {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.color-theme-selector.white {
+    background-color: white;
+}
+
+.color-theme-selector.grey {
+    background-color: darkgray;
+}
+
+.color-theme-selector.dark {
+    background-color: black;
+}
